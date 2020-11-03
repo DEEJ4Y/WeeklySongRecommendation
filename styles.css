@@ -6,17 +6,6 @@ body {
   padding: 0;
 }
 
-/* Navbar */
-
-.navbar-bg {
-  color: #dbe2ef;
-  background-color: #112d4e;
-}
-
-.navbar-brand {
-  margin: 0% 0% 0% 1.5%;
-}
-
 /* Recommended Song */
 
 .album-img {
@@ -26,7 +15,6 @@ body {
 
 .song-container {
   padding: 3% 15%;
-  background-color: #f9f7f7;
 }
 
 .song-details {
@@ -47,7 +35,6 @@ body {
 
 #links {
   color: #ffffff;
-  background-color: #112d4e;
   padding: 7% 15%;
 }
 
