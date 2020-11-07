@@ -20,6 +20,12 @@ body {
 
 /* Links Section */
 
+.btn {
+  display: block;
+  width: 7rem;
+  margin: auto;
+}
+
 .card {
   margin: 6.5% 0%;
   border-radius: 1rem;
