@@ -4,4 +4,4 @@ Don't you hate it when your friends are too lazy to listen to a song that you as
 
 I used my knowledge of HTML, CSS and Bootstrap to create this simple and responsive website.
 
-[Click Here](https://davidjosephind.github.io/WeeklySongRecommendation/) to see what I've recommended this week.
+[Click Here](https://DEEJ4Y.github.io/WeeklySongRecommendation/) to see what I've recommended this week.
