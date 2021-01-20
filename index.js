@@ -11,4 +11,71 @@ const songs = [
     ytMusic: "https://music.youtube.com/watch?v=l_Pj32HujgQ&feature=share",
     ytEmbed: "https://www.youtube.com/embed/xnaFpQaGFCA",
   },
+  // {
+  //   name: "",
+  //   band: "",
+  //   album: "",
+  //   appleMusic: "",
+  //   primeMusic: "",
+  //   ytMusic: "",
+  //   ytEmbed: "",
+  // },
 ];
+
+const songUI = (song) => {
+  return (
+    '<div class="row song">' +
+    '<div class="col-md-6 song-details">' +
+    "<h1><strong>" +
+    song.name +
+    "</strong></h1>" +
+    "<br>" +
+    "<h3>" +
+    song.band +
+    "</h3>" +
+    "<p>" +
+    song.album +
+    "</p>" +
+    "<div>" +
+    '<a href="' +
+    song.appleMusic +
+    '">' +
+    '<img class="link-img" src="./images/apple-music.png" alt="apple-music-img">' +
+    "</a>" +
+    '<a href="' +
+    song.spotify +
+    '">' +
+    '<img class="link-img" src="./images/spotify.png" alt="spotify-img">' +
+    "</a>" +
+    '<a href="' +
+    song.primeMusic +
+    '">' +
+    '<img class="link-img" src="./images/prime-music.png" alt="prime-music-img">' +
+    "</a>" +
+    '<a href="' +
+    song.ytMusic +
+    '">' +
+    '<img class="link-img" src="./images/youtube-music.png" alt="youtube-music-img">' +
+    "</a>" +
+    "</div>" +
+    "</div>" +
+    '<div class="col-md-6">' +
+    '<div class="embed-responsive embed-responsive-1by1">' +
+    '<iframe class="embed-responsive-item" src="' +
+    song.ytEmbed +
+    '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+    "</div>" +
+    "</div>" +
+    "</div>" +
+    "<hr>"
+  );
+};
+
+const showSongs = () => {
+  songs.map((song) => {
+    const ui = songUI(song);
+    $(".song-container").append(ui);
+  });
+};
+
+showSongs();

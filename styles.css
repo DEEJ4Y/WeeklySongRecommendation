@@ -24,49 +24,24 @@ body {
 }
 
 /* Recommended Song */
+.song {
+  margin-top: 2.5rem;
+}
 
 .song-container {
   padding: 3% 15%;
 }
 
 .song-details {
-  padding-top: 12%;
+  padding-top: 5rem;
 }
 
 .embed-responsive.embed-responsive-1by1 {
   border-radius: 1rem;
 }
 
-/* Links Section */
-
-.btn {
-  display: block;
-  width: 7rem;
-  margin: auto;
-}
-
-.card {
-  margin: 6.5% 0%;
-  border-radius: 1rem;
-}
-
-.card-body {
-  color: #ffffff;
-  text-align: center;
-}
-
-.card-title {
-  color: black;
-  font-weight: bold;
-}
-
-#links {
-  color: #eeeeee;
-  padding: 7% 15%;
-}
-
 .link-img {
-  width: 2rem;
+  width: 3rem;
   margin-right: 0.5rem;
 }
 
@@ -81,16 +56,21 @@ body {
 /* media query breakpoints */
 
 @media (max-width: 992px) {
-  #links {
+  /* #links {
     padding: 15%;
-  }
+  } */
   .link-img {
-    margin: 9.5%;
+    margin: 0 1rem 1rem 0;
+  }
+
+  .song {
+    margin-top: 0;
   }
   .song-container {
-    padding: 15%;
+    padding: 0 2rem;
   }
+  /*
   .song-details {
     padding-top: 0%;
-  }
+  } */
 }
