@@ -11,11 +11,24 @@ const songs = [
     ytMusic: "https://music.youtube.com/watch?v=l_Pj32HujgQ&feature=share",
     ytEmbed: "https://www.youtube.com/embed/xnaFpQaGFCA",
   },
+  {
+    name: "On My Own",
+    band: "The Used",
+    album: "The Used",
+    appleMusic:
+      "https://music.apple.com/in/album/on-my-own/283074453?i=283074542",
+    spotify: "https://open.spotify.com/track/3hccRLElirZOGOTHfCbg9p",
+    primeMusic:
+      "https://music.amazon.in/albums/B001B85QG8?trackAsin=B001B83MOQ&ref=dm_sh_287c-a9fa-9798-5476-4e0c4",
+    ytMusic: "https://music.youtube.com/watch?v=jdPeR3jr6ek",
+    ytEmbed: "https://www.youtube.com/embed/jdPeR3jr6ek",
+  },
   // {
   //   name: "",
   //   band: "",
   //   album: "",
   //   appleMusic: "",
+  //   spotify: "",
   //   primeMusic: "",
   //   ytMusic: "",
   //   ytEmbed: "",
@@ -29,7 +42,6 @@ const songUI = (song) => {
     "<h1><strong>" +
     song.name +
     "</strong></h1>" +
-    "<br>" +
     "<h3>" +
     song.band +
     "</h3>" +
@@ -39,22 +51,22 @@ const songUI = (song) => {
     "<div>" +
     '<a href="' +
     song.appleMusic +
-    '">' +
+    '" target="_blank">' +
     '<img class="link-img" src="./images/apple-music.png" alt="apple-music-img">' +
     "</a>" +
     '<a href="' +
     song.spotify +
-    '">' +
+    '" target="_blank">' +
     '<img class="link-img" src="./images/spotify.png" alt="spotify-img">' +
     "</a>" +
     '<a href="' +
     song.primeMusic +
-    '">' +
+    '" target="_blank">' +
     '<img class="link-img" src="./images/prime-music.png" alt="prime-music-img">' +
     "</a>" +
     '<a href="' +
     song.ytMusic +
-    '">' +
+    '" target="_blank">' +
     '<img class="link-img" src="./images/youtube-music.png" alt="youtube-music-img">' +
     "</a>" +
     "</div>" +
@@ -74,7 +86,7 @@ const songUI = (song) => {
 const showSongs = () => {
   songs.map((song) => {
     const ui = songUI(song);
-    $(".song-container").append(ui);
+    $(".song-container").prepend(ui);
   });
 };
 
