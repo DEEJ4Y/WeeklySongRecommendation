@@ -87,6 +87,9 @@ const showSongs = () => {
   songs.map((song, index) => {
     const uiElement = songUI(song);
     $(".song-container").prepend(uiElement);
+    if (songs.length === index + 1) {
+      $(".album").hide();
+    }
   });
 };
 
@@ -109,6 +112,8 @@ const setAlbumView = () => {
   console.log("Album preference: " + albumPreference);
   if (albumPreference === "null" || albumPreference === "false") {
     toggleAlbumView(false);
+  } else if (albumPreference === "true") {
+    toggleAlbumView(true);
   }
 };
 
