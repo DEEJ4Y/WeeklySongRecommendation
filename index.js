@@ -45,7 +45,7 @@ const songUI = (song) => {
     "<h3>" +
     song.band +
     "</h3>" +
-    "<p>" +
+    '<p class="album">' +
     song.album +
     "</p>" +
     "<div>" +
@@ -84,10 +84,19 @@ const songUI = (song) => {
 };
 
 const showSongs = () => {
-  songs.map((song) => {
-    const ui = songUI(song);
-    $(".song-container").prepend(ui);
+  songs.map((song, index) => {
+    const uiElement = songUI(song);
+    $(".song-container").prepend(uiElement);
+    if (songs.length === index + 1) {
+      $(".album").hide();
+    }
   });
 };
 
 showSongs();
+
+// Getting the current year for the copyright text
+const year = new Date().getFullYear();
+$("#year").html(year);
+
+console.log(window.innerWidth);

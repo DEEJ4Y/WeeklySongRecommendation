@@ -23,6 +23,10 @@ body {
   padding: 0;
 }
 
+.navbar-brand {
+  cursor: pointer;
+}
+
 /* Recommended Song */
 .song {
   margin-top: 2.5rem;
@@ -42,7 +46,7 @@ body {
 
 .link-img {
   width: 3rem;
-  margin-right: 0.5rem;
+  margin: 1rem 0.5rem 0 0;
 }
 
 /* Footer */
@@ -56,21 +60,24 @@ body {
 /* media query breakpoints */
 
 @media (max-width: 992px) {
-  /* #links {
-    padding: 15%;
-  } */
   .link-img {
-    margin: 0 1rem 1rem 0;
+    margin: 1rem 1rem 2rem 0;
   }
 
   .song {
     margin-top: 0;
   }
   .song-container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .song-details {
     padding-top: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .link-img {
+    width: 2.75rem;
   }
 }
