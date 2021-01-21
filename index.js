@@ -87,20 +87,37 @@ const showSongs = () => {
   songs.map((song, index) => {
     const uiElement = songUI(song);
     $(".song-container").prepend(uiElement);
-    if (songs.length === index + 1) {
-      $(".album").hide();
-    }
   });
 };
 
-showSongs();
+// Event handler for toggling the visibility of the respective song's album name
+const toggleAlbumView = (value) => {
+  if (value === "off" || value === true) {
+    $(".album").show();
+    $("#showAlbumToggler").attr("value", "on").prop("checked", true);
+    localStorage.setItem("isAlbumRequired", true);
+  } else if (value === "on" || value === false) {
+    $(".album").hide();
+    $("#showAlbumToggler").attr("value", "off").prop("checked", false);
+    localStorage.setItem("isAlbumRequired", false);
+  }
+};
+
+// Get the album display preference
+const setAlbumView = () => {
+  let albumPreference = localStorage.getItem("isAlbumRequired");
+  console.log("Album preference: " + albumPreference);
+  if (albumPreference === "null" || albumPreference === "false") {
+    toggleAlbumView(false);
+  }
+};
 
 // Getting the current year for the copyright text
 const year = new Date().getFullYear();
 $("#year").html(year);
 
-console.log(window.innerWidth);
+// Display all the songs from the songs object
+showSongs();
 
-const toggleAlbumView = () => {
-  $(".album").toggle();
-};
+// Show/Hide albums
+setAlbumView();
