@@ -100,3 +100,7 @@ const year = new Date().getFullYear();
 $("#year").html(year);
 
 console.log(window.innerWidth);
+
+const toggleAlbumView = () => {
+  $(".album").toggle();
+};
