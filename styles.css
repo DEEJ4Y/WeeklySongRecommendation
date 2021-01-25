@@ -50,6 +50,23 @@ body {
   margin: 1rem 0.5rem 0 0;
 }
 
+#previous-recommendation-btn {
+  padding: 0.5rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+#previous-recommendation-btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-arrow {
+  margin-left: 0.125rem;
+}
+
 /* Footer */
 
 .footer-text {

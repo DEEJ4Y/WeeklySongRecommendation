@@ -39,6 +39,21 @@ const songs = [
   //     ytEmbed: "",
   //   },
   // },
+
+  // To Add:
+  // 1. Ohio is for Lovers,
+  // 2. Until the Day I die,
+  // 3. Ocean Avenue,
+  // 4. Dear Maria Count me in,
+  // 5. Tell that Mick he just made my list of things to do today,
+  // 6. False Pretense
+  // 7. All we know
+  // 8. Drowning Lessons
+  // 9. The Mission
+  // 10. Our Lawyer Made Us Change the name of this song so we wouldn't get sued
+  // 11. Waiting
+  // 12. Pressure
+  // 13. You know what they do to guys like us in prison
 ];
 
 const songUI = (song) => {
@@ -101,7 +116,10 @@ const songUI = (song) => {
   }
 };
 
+// Display all songs
 const showSongs = () => {
+  $(".song-container").html("");
+
   songs.map((song, index) => {
     const uiElement = songUI(song);
     $(".song-container").prepend(uiElement);
@@ -109,6 +127,12 @@ const showSongs = () => {
       $(".album").hide();
     }
   });
+};
+
+// Display one song: Last song in the JSO
+const showSong = () => {
+  const uiElement = songUI(songs[songs.length - 1]);
+  $(".song-container").prepend(uiElement);
 };
 
 // Event handler for toggling the visibility of the respective song's album name
@@ -140,7 +164,7 @@ const year = new Date().getFullYear();
 $("#year").html(year);
 
 // Display all the songs from the songs object
-showSongs();
+showSong();
 
 // Show/Hide albums
 setAlbumView();
