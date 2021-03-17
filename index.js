@@ -9,8 +9,8 @@ const songs = [
       spotify: "https://open.spotify.com/track/4lrEOsjmbKG6mf0buc7eny",
       primeMusic:
         "https://music.amazon.in/albums/B07586LYHQ?trackAsin=B075868P7W&ref=dm_sh_5f5c-bcca-dmcp-0d83-5f637&musicTerritory=IN&marketplaceId=A21TJRUUN4KGV",
-      ytMusic: "https://music.youtube.com/watch?v=l_Pj32HujgQ&feature=share",
-      ytEmbed: "https://www.youtube.com/embed/xnaFpQaGFCA",
+      ytMusic: "https://music.youtube.com/watch?v=ap0mqwvf7H0&feature=share",
+      ytEmbed: "https://www.youtube.com/embed/ap0mqwvf7H0",
     },
   },
   {
@@ -138,6 +138,14 @@ const songs = [
   //     ytEmbed: "",
   //   },
   // },
+
+  // To Add:
+  // Until the Day I die,
+  // Ocean Avenue,
+  // Dear Maria Count me in,
+  // Tell that Mick he just made my list of things to do today,
+  // False Pretense
+  // All we know
 ];
 
 const songUI = (song) => {
