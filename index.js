@@ -56,8 +56,7 @@ const songs = [
     },
   },
   {
-    name:
-      "Our Lawyer Made Us Change The Name Of This Song So We Wouldn't Get Sued",
+    name: "Our Lawyer Made Us Change The Name Of This Song So We Wouldn't Get Sued",
     band: "Fall Out Boy",
     album: "From Under the Cork Tree",
     links: {
@@ -126,6 +125,21 @@ const songs = [
       ytEmbed: "https://www.youtube.com/embed/sRBE537_UbY",
     },
   },
+  {
+    name: "Tell That Mick He Just Made My List of Things to Do Today",
+    band: "Fall Out Boy",
+    album: "Take This To Your Grave",
+    links: {
+      appleMusic:
+        "https://music.apple.com/in/album/tell-that-mick-he-just-made-my-list-things-to-do-today/76160059?i=76159691",
+      spotify:
+        "https://open.spotify.com/track/6mCjOSXkABONouTVa6PQOy?si=0ef1f2baf9b04565",
+      primeMusic:
+        "https://music.amazon.in/albums/B0011Z1BGA?trackAsin=B0011Z1AYS&ref=dm_sh_dea1-b062-b215-6fb7-6b9f2",
+      ytMusic: "https://music.youtube.com/watch?v=BqW2aIoOXSI",
+      ytEmbed: "https://www.youtube.com/embed/BqW2aIoOXSI",
+    },
+  },
   // {
   //   name: "",
   //   band: "",
@@ -143,7 +157,6 @@ const songs = [
   // Until the Day I die,
   // Ocean Avenue,
   // Dear Maria Count me in,
-  // Tell that Mick he just made my list of things to do today,
   // False Pretense
   // All we know
 ];
