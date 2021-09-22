@@ -140,18 +140,21 @@ const songs = [
       ytEmbed: "https://www.youtube.com/embed/BqW2aIoOXSI",
     },
   },
-  // {
-  //   name: "",
-  //   band: "",
-  //   album: "",
-  //   links: {
-  //     appleMusic: "",
-  //     spotify: "",
-  //     primeMusic: "",
-  //     ytMusic: "",
-  //     ytEmbed: "",
-  //   },
-  // },
+  {
+    name: "Seventeen Ain't so Sweet",
+    band: "The Red Jumpsuit Apparatus",
+    album: "Don't you fake it",
+    links: {
+      appleMusic:
+        "https://music.apple.com/us/album/seventeen-aint-so-sweet/806224598?i=806224726",
+      spotify:
+        "https://open.spotify.com/track/5fUQy4Fj5jt6O7INrMkobx?si=dd20b281394a4d55",
+      primeMusic:
+        "https://music.amazon.in/albums/B000T2IOKC?marketplaceId=A21TJRUUN4KGV&musicTerritory=IN&trackAsin=B000T2M7Q4",
+      ytMusic: "https://music.youtube.com/watch?v=hr4RZnOzRsg",
+      ytEmbed: "https://www.youtube.com/embed/hr4RZnOzRsg",
+    },
+  },
 
   // To Add:
   // Until the Day I die,
