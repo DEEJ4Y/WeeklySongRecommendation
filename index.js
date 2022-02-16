@@ -155,7 +155,21 @@ const songs = [
       ytEmbed: "https://www.youtube.com/embed/hr4RZnOzRsg",
     },
   },
-
+  {
+    name: "In the End",
+    band: "Black Veil Brides",
+    album: "Wretched and Divine",
+    links: {
+      appleMusic:
+        "https://music.apple.com/us/album/in-the-end/1440852543?i=1440852697",
+      spotify:
+        "https://open.spotify.com/track/2RxqHa7EgbKHEjYav48eXX?si=3099670dc37148c4",
+      primeMusic:
+        "https://music.amazon.in/albums/B073J9GT8T?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_sEjDUdL2y1KvfVi6OcDSjqA4J&trackAsin=B073PMGP3X",
+      ytMusic: "https://music.youtube.com/watch?v=f0EQlIzPowM",
+      ytEmbed: "https://www.youtube.com/embed/f0EQlIzPowM",
+    },
+  },
   // To Add:
   // Until the Day I die,
   // Ocean Avenue,
